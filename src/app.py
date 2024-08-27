@@ -4,12 +4,9 @@ import time
 import datetime
 
 def get_dt_iso():
-    # Get the current date and time in ISO format
-    current_datetime_iso = datetime.datetime.now().isoformat()
-    return current_datetime_iso
+    truncated_iso = now.isoformat(timespec='milliseconds')
+    return truncated_iso
 
-# Example usage
-# current_datetime_str = get_current_datetime_iso()
 print(get_dt_iso())
 
 
