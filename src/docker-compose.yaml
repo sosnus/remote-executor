@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  remote-executor:
+    # image: sosnus15/mqttlogger
+    build: .
+    container_name: remote-executor_container
+    restart: always
+    environment:
+      V_BROKER: "192.168.1.160"
+      V_TOPICS: "remote-executor/cmd"
+      TZ: "Europe/Warsaw"
+      LANG: "pl_PL.UTF-8"
+      LC_ALL: "pl_PL.UTF-8"
+    volumes:
+        - /home/recomputer/agroworkspace/agrostackdata/remote-executor/:/tmp/remote-executor/
