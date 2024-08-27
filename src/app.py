@@ -8,8 +8,11 @@ def get_dt_iso():
     truncated_iso = now.isoformat(timespec='milliseconds')
     return truncated_iso
 
-def header():
-    return "["+get_dt_iso()+"]>>>"
+def header(modulename = "NO"):
+    if modulename != "NO":
+        return "["+get_dt_iso()+"]>>"+modulename+">"
+    else:
+        return "["+get_dt_iso()+"]>>>"
 print(get_dt_iso())
 print(header())
 
