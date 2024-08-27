@@ -1,0 +1,5 @@
+Output:
+CONTAINER ID   IMAGE                               COMMAND                  CREATED        STATUS                  PORTS                                                     NAMES
+41d5797fc17b   grafana/grafana-oss:10.0.12         "/run.sh"                5 months ago   Up 5 months             3000/tcp, 0.0.0.0:32768->40017/tcp, :::32768->40017/tcp   grafana-container
+b2ca7a57f466   nginx                               "/docker-entrypoint.…"   7 months ago   Up 11 seconds           0.0.0.0:40033->80/tcp, :::40033->80/tcp                   nginx-container
+5e8b300a1b87   nodered/node-red:3.0.2-18-minimal   "./entrypoint.sh"        7 months ago   Up 7 months (healthy)   0.0.0.0:40015->1880/tcp, :::40015->1880/tcp               nodered-container
