@@ -1,0 +1,1 @@
+tegrastats | head -n 1
