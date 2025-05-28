@@ -1,11 +1,11 @@
 import paramiko
 
 # SSH connection details
-hostname = "srv24.mikr.us"
+hostname = "???"
 
 port = 10202
 username = "root"
-password = "SECRET"  # Replace with your actual password
+password = "???"  # Replace with your actual password
 script_path = "./action/docker-ps.sh"  # Path to the script on the remote server
 # script_path = "./action/nginx-restart.sh"  # Path to the script on the remote server
 output_file = "ssh_output.txt"  # Local file to store the output
